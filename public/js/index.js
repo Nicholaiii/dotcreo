@@ -1,0 +1,1 @@
+const upperNavBar = document.querySelector('.upper-navbar')

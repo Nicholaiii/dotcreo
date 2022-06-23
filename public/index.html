@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Exagmite Digital</title>
+</head>
+<body>
+    <header>
+        <div class="header-usps_mobile">
+            <div class="marquee-container">
+                <h5 class="marquee-item"><i class='bx bx-check'></i> Web Development</h5>
+                <h5 class="marquee-item"><i class='bx bx-check'></i> E-Commerce</h5>
+                <h5 class="marquee-item"><i class='bx bx-check'></i> Marketing</h5>
+            </div>
+        </div>
+        <div class="header-usps">
+            <div class="usp-container">
+                <h5><i class='bx bx-check'></i> Web Development</h5>
+                <h5><i class='bx bx-check'></i> E-Commerce</h5>
+                <h5><i class='bx bx-check'></i> Marketing</h5>
+            </div>
+        </div>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<!-- GSAP Animations-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script>
+  const marqueeItems = gsap.utils.toArray(".marquee-item");
+  const revolveTime = 4;
+
+  function marqueeAnim() {
+    const scroll = gsap.timeline()
+    .to(marqueeItems,  {y:'-=40', duration:1})
+    .to(marqueeItems[0], {y:'+=120', duration:0})
+    
+    marqueeItems.push( marqueeItems.shift() );
+    
+    gsap.delayedCall(revolveTime, marqueeAnim);
+  }
+
+  gsap.delayedCall(revolveTime, marqueeAnim);
+</script>
+</html>
