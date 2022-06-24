@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto:wght@300&display=swap');
+:root {
+  --fnt-headers: 'Outfit';
+  --fnt-main: 'Roboto';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: var(--fnt-headers);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: var(--fnt-headers);
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: var(--fnt-headers);
+}
+
+h4 {
+  font-size: 1rem;
+  font-family: var(--fnt-main);
+}
+
+h5 {
+  font-size: 0.83rem;
+  font-family: var(--fnt-main);
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--fnt-main);
+}
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+/* Marquee Top Bar */
+.header-marquee-container {
+  text-align: center;
+  height: 40px;
+  overflow: hidden;
+  margin: 0 -10px;
+  padding: 5px 0;
+  display: none;
+}
+
+.marquee-item {
+  line-height: 40px;
+  color: var(--clr-fntOffWhite);
+}
+
+/* USP Top Bar */
+.header-usp-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 0;
+}
+
+@media (max-width: 780px) {
+  .header-usp-container {
+    display: none;
+  }
+  .header-marquee-container {
+    display: block;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+}
+
+.navbar-bunch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--fnt-main)
+}
