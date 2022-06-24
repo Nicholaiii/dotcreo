@@ -14,6 +14,7 @@ h2 span {
 
 /* Section 1 */
 .section1 {
+margin-top: 90px;
 display: flex;
 flex-direction: column;
 align-items: center;

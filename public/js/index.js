@@ -15,11 +15,11 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobileNav');
+
+hamburger.addEventListener('click', function() {
+  mobileNav.classList.toggle('activeMobileNav');
+})
+
+
