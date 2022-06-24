@@ -188,3 +188,40 @@ justify-content: center;
     padding: 1rem;
     border-bottom: 1px solid black;
 }
+
+.footer {
+    background: #efefef;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+  }
+  
+  .footer h4 {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: var(--fnt-headers);
+  }
+  
+  .footer li {
+    line-height: 1.5;
+    font-family: var(--fnt-main);
+  }
+  
+  .footer-about {
+    max-width: 200px;
+  }
+
+  .socials-icon-container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid black;
+    padding: 6px;
+    text-align: center;
+    font-size: smaller;
+    background: rgba(86,125,179,0.1);
+    font-family: var(--fnt-main);
+  }
