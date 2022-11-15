@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiperIndexReviews", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -14,12 +14,4 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
     },
   });
-
-const hamburger = document.querySelector('.hamburger');
-const mobileNav = document.querySelector('.mobileNav');
-
-hamburger.addEventListener('click', function() {
-  mobileNav.classList.toggle('activeMobileNav');
-})
-
 
