@@ -83,9 +83,9 @@ section {
     position: relative;
 }
 
-.accordion .contentBx:first-of-type .label {
+/* .accordion .contentBx:first-of-type .label {
     border-top: 1px solid rgba(0,0,0,0.1);
-}
+} */
 
 .accordion .contentBx .label {
     position: relative;
@@ -117,9 +117,17 @@ section {
     transition: 0.5s;
 }
 
+.accordion .contentBx .content p:not(:last-of-type) {
+    margin-bottom: var(--spacing2);
+}
+
+.accordion .contentBx .content h4 {
+    margin-bottom: var(--spacing1);
+}
+
 .accordion .contentBx.active .content {
-    height: 250px;
-    padding: var(--spacing3) 0;
+    height: 300px;
+    padding: var(--spacing2);
 }
 
 .section4 {
