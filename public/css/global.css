@@ -9,11 +9,11 @@
   --clr-brandPink: #CA49E2;
   --clr-brandWhite: #FDF7FA;
   --spacing1: 0.5rem;
-  --spacing2: 1.25rem;
-  --spacing3: 2.25rem;
-  --spacing4: 3.25rem;
+  --spacing2: 1.75rem;
+  --spacing3: 2.5rem;
+  --spacing4: 3.5rem;
   --boxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  --borderRadius: 10px;
+  --borderRadius: 7.5px;
 }
   
 * {
@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   line-height: 36px;
   font-family: var(--fnt-main);
   letter-spacing: normal;
@@ -73,22 +73,16 @@ span {
   font-size: inherit;
 }
 
-em {
+em, u {
   font-size: inherit;
 }
 
 @media (min-width: 1200px) {
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1200px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   h2 {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
   }
 }
 
@@ -119,11 +113,23 @@ em {
 .secondary-cta {
   color: var(--clr-brandPurple);
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--clr-brandPurple);
+  text-underline-offset: 2px;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.secondary-cta-mobile {
+  color: var(--clr-brandPurple);
+  background: none;
+  cursor: pointer;
+  border: 2px solid;
+  padding: var(--spacing1);
+  width: 100%;
+  text-align: center;
+  border-radius: var(--borderRadius);
+  text-decoration: none;
 }
 
 .text-background {
@@ -131,6 +137,16 @@ em {
   background-size: 100%;
   width: fit-content;
   background-repeat: no-repeat;
+}
+
+.purple-link {
+  color: var(--clr-brandPurple);
+  text-decoration: underline;
+  text-decoration-color: var(--clr-brandPurple);
+  font-style: italic;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 /* Blog Cards Swiper */
@@ -178,14 +194,6 @@ em {
 
 .blog-card-content h5 {
   font-weight: 400;
-}
-
-.blog-card-content a {
-  padding: var(--spacing1);
-  color: var(--clr-brandPurple);
-  border-radius: var(--borderRadius);
-  cursor: pointer;
-  border: 2px solid var(--clr-brandPurple);
 }
 
 .swiper-button-next::after,

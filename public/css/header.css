@@ -202,12 +202,6 @@
 }
 
 /* Media Queries */
-@media (max-width: 395px) {
-  .nav-buttons .primary-cta {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .hamburger-container {
     display: none !important;

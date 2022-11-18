@@ -31,7 +31,9 @@ forEach(link => {
 
 /* Change CTA Text */
 function changeHeaderCTA() {
-    if (window.innerWidth > 450) {
+    if (window.innerWidth > 410 && window.innerWidth < 450) {
+        document.querySelector('.nav-buttons .primary-cta').innerHTML = "Free Call →"
+    } else if (window.innerWidth >= 450) {
         document.querySelector('.nav-buttons .primary-cta').innerHTML = "Get Started →"
     }
 };
