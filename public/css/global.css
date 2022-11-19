@@ -8,8 +8,8 @@
   --clr-brandBlue: #4141D1;
   --clr-brandPink: #CA49E2;
   --clr-brandWhite: #FDF7FA;
-  --spacing1: 0.5rem;
-  --spacing2: 1.75rem;
+  --spacing1: 0.6rem;
+  --spacing2: 1.6rem;
   --spacing3: 2.5rem;
   --spacing4: 3.5rem;
   --boxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -87,7 +87,7 @@ em, u {
 }
 
 /* Misc */
-.fa-solid:not(.fa-arrow-right):not(.portfolioCard i)::before,
+.fa-solid:not(.fa-arrow-right):not(.portfolioCard i):not(.blog-navigation div i)::before,
 .fa-brands::before,
 .gradient-clip,
 .fa-regular.fa-calendar-xmark {
