@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   line-height: 36px;
   font-family: var(--fnt-main);
   letter-spacing: normal;
@@ -99,7 +99,7 @@ em, u {
 
 .primary-cta {
   text-decoration: none;
-  padding: var(--spacing1) var(--spacing2);
+  padding: var(--spacing1) 1rem;
   background-image: linear-gradient(100deg, var(--clr-brandPink), var(--clr-brandPurple));
   border-radius: var(--borderRadius);
   color: var(--clr-brandWhite) !important;
@@ -108,6 +108,7 @@ em, u {
   outline: none;
   border: none;
   cursor: pointer;
+  width:fit-content;
 }
 
 .secondary-cta {
@@ -147,6 +148,10 @@ em, u {
   cursor: pointer;
   background: none;
   border: none;
+}
+
+.scroll-down header {
+	transform: translate3d(0, -100%, 0);
 }
 
 /* Blog Cards Swiper */

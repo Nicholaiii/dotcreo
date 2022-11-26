@@ -53,3 +53,29 @@ function marqueeAnim() {
 }
 
 gsap.delayedCall(revolveTime, marqueeAnim);
+
+// Navbar Appear on Scroll
+const mobileNav1 = document.querySelector('.mobileNav');
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+	const currentScroll = window.pageYOffset;
+	if (!mobileNav1.classList.contains('activeMobileNav') && currentScroll <= 0) {
+		body.classList.remove("scroll-up");
+		return;
+	}
+
+	if (!mobileNav1.classList.contains('activeMobileNav') && currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+		body.classList.remove("scroll-up");
+		body.classList.add("scroll-down");
+	} else if (
+		!mobileNav1.classList.contains('activeMobileNav') && 
+		currentScroll < lastScroll &&
+		body.classList.contains("scroll-down")
+	) {
+		body.classList.remove("scroll-down");
+		body.classList.add("scroll-up");
+	}
+	lastScroll = currentScroll;
+});

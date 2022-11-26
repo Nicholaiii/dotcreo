@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .section1-column1 img {
@@ -24,6 +25,18 @@ body {
 
 .section1-column1 {
     max-width: 530px;
+    flex-basis: 50%;
+}
+
+.section1-column2 {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+.section1-column2 img {
+    width: 100%;
+    max-width: 600px;
 }
 
 .section1 h4 {
@@ -35,6 +48,19 @@ body {
 
 .section1 h1 span {
     font-size: inherit;
+}
+
+.section1-column2 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transform-style: preserve-3d;
+}
+
+.section1 button.primary-cta {
+    margin-top: var(--spacing2);
 }
 
 /* Section 2 */
@@ -120,7 +146,7 @@ body {
     justify-content: space-evenly;
 }
 
-.section4 button.secondary-cta {
+.section4 button.primary-cta {
     margin-top: var(--spacing2);
 }
 
@@ -256,11 +282,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 
 }
 
 .section6-column1 {
+    display: flex;
     flex-basis: 50%;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.section6-column1 p {
+    margin: var(--spacing2) 0;
 }
 
 .section6-column2 {
@@ -269,6 +303,15 @@ body {
     gap: 1rem;
     flex-basis: 50%;
     max-width: 500px;
+}
+
+.section6-column2 img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.section6 button.primary-cta {
+    margin-top: var(--spacing2);
 }
 
 /* Section7 */
@@ -372,7 +415,7 @@ body {
 .swiperIndexReviews .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 290px !important;
+    width: 290px;
     display: flex;
     flex-direction: column;
     background: white;
@@ -404,11 +447,11 @@ body {
 
 /* Media Queries */
 @media (min-width: 500px) {
-    .section1 h1 {
-        font-size: 3.2rem;
-    }
     .section3 {
         flex-direction: row;
+    }
+    .swiperIndexReviews .swiper-slide {
+        width: 360px;
     }
 }
 
@@ -432,7 +475,7 @@ body {
         margin-bottom: unset;
     }
     .section6 {
-        flex-direction: unset;
+        flex-direction: row-reverse;
     }
     .swiperIndexS7 .swiper-slide {
         width: 350px !important;
@@ -487,5 +530,11 @@ body {
 @media (min-width: 1000px) {
     .section1 h1 {
         font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section1 h1 {
+        font-size: 3.8rem;
     }
 }

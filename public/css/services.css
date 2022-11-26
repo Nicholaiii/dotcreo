@@ -1,3 +1,9 @@
+body {
+    overflow-x: hidden;
+    background-image: url('/assets/services-background.png');
+    background-size: cover;
+}
+
 section {
     padding: 7% 8%;
 }
@@ -20,6 +26,8 @@ section {
     box-shadow: var(--boxShadow);
     border: 1px solid rgba(0,0,0,0.1);
 }
+
+
 
 .section2-column1 h2 {
     max-width: 775px;
@@ -111,7 +119,6 @@ section {
 
 .accordion .contentBx .content {
     position: relative;
-    background: #fff;
     height: 0;
     overflow-y: auto;
     transition: 0.5s;
@@ -182,11 +189,12 @@ section {
 }
 
 .sect4-card button {
-    padding: var(--spacing1) var(--spacing2);
+    padding: var(--spacing1);
     border-radius: var(--borderRadius);
-    border: none;
     cursor: pointer;
-    margin-top: var(--spacing2)
+    margin-top: var(--spacing2);
+    border: 4px solid rgba(116, 101, 255, 0.22);
+    background: none;
 }
 
 .sect4-card.active {
@@ -210,6 +218,10 @@ section {
     background: var(--clr-brandWhite);
 }
 
+.sect4-card.active button {
+    border: 4px solid var(--clr-brandWhite);
+    color: var(--clr-brandWhite);
+}
 .sect4-card.active h4,
 .sect4-card.active ul li {
     color: var(--clr-brandWhite) !important;
