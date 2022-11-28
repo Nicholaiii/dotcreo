@@ -65,4 +65,5 @@ br {
     width: 100px;
     height: 100px;
     margin-right: var(--spacing1);
+    object-fit: cover;
 }

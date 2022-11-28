@@ -154,6 +154,10 @@ em, u {
 	transform: translate3d(0, -100%, 0);
 }
 
+.copyBlog {
+  cursor: pointer;
+}
+
 /* Blog Cards Swiper */
 .blog-card {
   background-color: var(--clr-brandWhite);
