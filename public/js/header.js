@@ -22,12 +22,10 @@ const mobileNav2 = document.querySelector('.mobileNav');
 const navLinks = document.querySelectorAll('.nav-list-item a');
 
 /* Current Page Nav Functionality */
-navLinks.
-forEach(link => {
-    if (link.href === window.location.href) {
-        link.setAttribute('aria-current', 'page');
-    }
-})
+[...navLinks]
+.filter(link => window.location.href.includes(link.href))
+.at(-1)
+.setAttribute('aria-current', 'page');
 
 /* Change CTA Text */
 function changeHeaderCTA() {
