@@ -162,6 +162,10 @@ section {
     background-color: rgb(40,40,40)
 }
 
+.portfolioCard.ef {
+    background-color: #d1b165;
+}
+
 /* Media Queries */
 
 @media (min-width: 1030px) {

@@ -79,3 +79,12 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
+// Copy Blog to Clipboard
+const copyBlog = document.querySelectorAll('.copyBlog');
+
+for (let i = 0; i < copyBlog.length; i++) {
+copyBlog[i].addEventListener("click", function() {
+  navigator.clipboard.writeText(window.location.href);
+})
+}
